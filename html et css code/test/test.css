@@ -1,0 +1,218 @@
+/* ==========================================
+   1. BASE
+   ========================================== */
+body {
+    margin: 0;
+    color: #2a160b;
+    background: white;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   2. HEADER (inline-block, no flex)
+   ========================================== */
+.site-header {
+    padding: 28px 5%;
+    background: #fbf1e6;
+    font-size: 0; /* removes gaps between inline-blocks */
+}
+
+.logo {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    color: #2a160b;
+}
+
+.logo img {
+    display: inline-block;
+    width: 42px;
+    vertical-align: middle;
+}
+
+.logo span {
+    margin-left: 14px;
+    font-size: 26px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.site-nav {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.site-nav a {
+    display: inline-block;
+    margin-left: 38px;
+    padding: 6px 0;
+    color: #2a160b;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.site-nav a.active {
+    color: #6b3410;
+    border-bottom-color: #6b3410;
+}
+
+
+/* ==========================================
+   3. HERO (two inline-block columns)
+   ========================================== */
+.hero {
+    height: 504px;
+    background: #fbf1e6;
+    font-size: 0;
+}
+
+.hero-text,
+.hero-image {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    vertical-align: top;
+}
+
+.hero-text {
+    width: 47.4%;
+    padding: 90px 5% 0;
+}
+
+.hero-image {
+    width: 52.6%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin: 0 0 32px;
+    font-size: 46px;
+    line-height: 1.35;
+}
+
+.hero p {
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    color: white;
+    font-size: 17px;
+    background: #6b3410;
+    border-radius: 4px;
+}
+
+
+/* ==========================================
+   4. SPECIALTIES (three inline-block cards)
+   ========================================== */
+.specialties {
+    padding: 48px 5.3% 72px;
+    text-align: center;
+}
+
+.specialties h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.underline {
+    width: 58px;
+    margin: 16px auto 20px;
+    border: 0;
+    border-top: 3px solid #6b3410;
+}
+
+.cards {
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 31%;
+    height: 330px;
+    margin-right: 3.5%;
+    padding: 36px 24px 0;
+    vertical-align: top;
+    background: #fbf1e6;
+    border-radius: 6px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.icon {
+    margin: 0 auto 28px;
+}
+
+.icon-cup { width: 66px; }
+.icon-croissant { width: 90px; margin-top: 8px; margin-bottom: 36px; }
+.icon-chair { width: 78px; }
+
+.card h3 {
+    margin: 0 0 14px;
+    font-size: 21px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* ==========================================
+   5. FOOTER
+   ========================================== */
+.site-footer {
+    padding: 38px 5%;
+    background: #fbf1e6;
+    border-top: 2px solid #e6dccf;
+    font-size: 0;
+}
+
+.info {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33.33%;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.info img {
+    display: inline-block;
+    width: 22px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.info span {
+    vertical-align: middle;
+}
+
+.info-center { text-align: center; }
+.info-right { text-align: right; }
